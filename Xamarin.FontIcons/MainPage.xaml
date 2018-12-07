@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Xamarin.FontIcons" 
+             x:Class="Xamarin.FontIcons.MainPage"
+             BackgroundColor="#698071">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            
+            <Style x:Key="Icons" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource CustomFont}" />
+                <Setter Property="FontSize" Value="30" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="WidthRequest" Value="40" />
+            </Style>
+            
+            <Style x:Key="LikeIcon" BasedOn="{StaticResource Icons}" TargetType="Label">
+                <Setter Property="Text" Value="&#xe801;" />
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <FlexLayout 
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center">
+        <RelativeLayout>
+            <Label Text="&#xe803;" x:Name="Heart" FontFamily="{StaticResource CustomFont}" FontSize="30" TextColor="White"/>
+            <Label Text="&#xe802;" Opacity="0" x:Name="HeartFilled"  FontFamily="{StaticResource CustomFont}" FontSize="30" TextColor="White" />
+        </RelativeLayout>
+        <Label Text="&#xe800;" Style="{StaticResource Icons}" />
+        <Label Style="{StaticResource LikeIcon}" />
+        <Label x:Name="HandIcon" Style="{StaticResource Icons}" />
+    </FlexLayout>
+</ContentPage>
