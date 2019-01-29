@@ -24,4 +24,10 @@
     <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorAccent">#FF4081</item>
     </style>
+    
+    <!-- other styles go here -->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--set your custom font properties-->
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
 </resources>

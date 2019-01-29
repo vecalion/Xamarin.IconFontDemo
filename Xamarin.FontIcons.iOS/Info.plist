@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Xamarin.FontIcons</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.test.Xamarin-FontIcons</string>
+	<string>com.squarecrowdapps.testfont</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>

@@ -23,6 +23,13 @@ namespace Xamarin.FontIcons.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes
+            {
+                TextColor = UIColor.Black,
+                Font = UIFont.FromName("customfont", 24)
+            });
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
