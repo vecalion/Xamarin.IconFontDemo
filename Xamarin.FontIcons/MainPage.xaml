@@ -5,6 +5,11 @@
              x:Class="Xamarin.FontIcons.MainPage"
              Title="&#xe800; Test"
              BackgroundColor="#698071">
+    <ContentPage.ToolbarItems>
+       <ToolbarItem Text="&#xe800;"  Order="Primary" Priority="1" />
+        <ToolbarItem Text="&#xe803;"  Order="Primary" Priority="1" />
+   </ContentPage.ToolbarItems>
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             

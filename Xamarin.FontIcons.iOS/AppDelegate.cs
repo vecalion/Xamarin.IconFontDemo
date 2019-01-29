@@ -13,6 +13,9 @@ namespace Xamarin.FontIcons.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+        const string _fontName = "customfont";
+        nfloat _fontSize = 16;
+
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -29,6 +32,14 @@ namespace Xamarin.FontIcons.iOS
                 TextColor = UIColor.Black,
                 Font = UIFont.FromName("customfont", 24)
             });
+
+            var textAttributes = new UITextAttributes()
+            {
+                Font = UIFont.FromName(_fontName, _fontSize)
+            };
+
+            UIBarButtonItem.Appearance.SetTitleTextAttributes(textAttributes, UIControlState.Normal);
+            UIBarButtonItem.Appearance.SetTitleTextAttributes(textAttributes, UIControlState.Highlighted);
 
             LoadApplication(new App());
 
